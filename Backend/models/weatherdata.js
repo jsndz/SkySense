@@ -1,7 +1,5 @@
-'use strict';
-const {
-  Model
-} = require('sequelize');
+"use strict";
+const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
   class WeatherData extends Model {
     /**
@@ -14,13 +12,16 @@ module.exports = (sequelize, DataTypes) => {
       WeatherData.belongsTo(models.City);
     }
   }
-  WeatherData.init({
-    temperature: DataTypes.FLOAT,
-    humidity: DataTypes.FLOAT,
-    timestamp: DataTypes.DATE
-  }, {
-    sequelize,
-    modelName: 'WeatherData',
-  });
+  WeatherData.init(
+    {
+      temperature: DataTypes.FLOAT,
+      humidity: DataTypes.FLOAT,
+      timestamp: DataTypes.DATE,
+    },
+    {
+      sequelize,
+      modelName: "WeatherData",
+    }
+  );
   return WeatherData;
 };
