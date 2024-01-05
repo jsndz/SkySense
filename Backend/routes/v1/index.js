@@ -6,12 +6,13 @@ const {
   GetWeatherData,
   GetAllWeatherData,
 } = require("../../controllers/weatherdata-controller");
-const {CreateCity,
-    DeleteCity,
-    UpdateCity,
-    GetCity,
-    GetAllCity} = require("../../controllers/city-controller");
-
+const {
+  CreateCity,
+  DeleteCity,
+  UpdateCity,
+  GetCity,
+  GetAllCity,
+} = require("../../controllers/city-controller");
 
 const router = express.Router();
 
@@ -26,6 +27,5 @@ router.delete("/city/:id", DeleteCity);
 router.put("/city/:id", UpdateCity);
 router.get("/city/:id", GetCity);
 router.get("/city", GetAllCity);
-
 
 module.exports = router;
