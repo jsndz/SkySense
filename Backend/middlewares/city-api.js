@@ -11,7 +11,7 @@ async function genCityData(cityname) {
     });
     if (response.data.length === 0) {
       throw new Error("City not found");
-      return null;
+      
     } else {
       const location = response.data[0];
       console.log("location", location);
@@ -26,3 +26,6 @@ async function genCityData(cityname) {
     throw error;
   }
 }
+
+
+module.exports = genCityData;
