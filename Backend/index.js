@@ -3,8 +3,9 @@ const bodyParser = require("body-parser");
 const passport =require("passport");
 const passportAuth = require('./config/jwt-middleware');
 const { PORT } = require("./config/serverconfig");
-
 const morgan = require("morgan");
+const v1ApiRoutes = require("./routes/index");
+
 const setupAndstartserver = async () => {
   const app = express();
   app.use(bodyParser.json());

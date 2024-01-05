@@ -105,5 +105,9 @@ const GetAllCity = async (req, res) => {
 
 
 module.exports = {
-    CreateCity
+    CreateCity,
+    DeleteCity,
+    UpdateCity,
+    GetCity,
+    GetAllCity
 }
