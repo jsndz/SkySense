@@ -5,7 +5,7 @@ class CityService {
     this.cityRepository = new CityRepository();
   }
 
-  async getAll() {
+  async getAllCity() {
     try {
       const city = await this.cityRepository.getAll();
       return city;
@@ -15,7 +15,7 @@ class CityService {
     }
   }
 
-  async getById(id) {
+  async getByCityId(id) {
     try {
       const city = await this.cityRepository.getById(id);
       return city;
@@ -25,7 +25,7 @@ class CityService {
     }
   }
 
-  async create(city) {
+  async createCity(city) {
     try {
       const city = await this.cityRepository.create(city);
       return city;
@@ -35,7 +35,7 @@ class CityService {
     }
   }
 
-  async update(id, city) {
+  async updateCity(id, city) {
     try {
       const city = await this.cityRepository.update(id, city);
       return city;
@@ -45,7 +45,7 @@ class CityService {
     }
   }
 
-  async delete(id) {
+  async deleteCity(id) {
     try {
         const city = await this.cityRepository.destroy(id);
         return city;
