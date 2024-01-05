@@ -9,11 +9,11 @@
   - Install necessary packages like `express`, `mysql2`, `sequelize`, and others.
 
 ## Database Configuration
-- [ ] **Create MySQL Database:**
+- [x] **Create MySQL Database:**
   - Set up a MySQL database to store weather-related data.
-- [ ] **Define Sequelize Model:**
+- [x] **Define Sequelize Model:**
   - Create Sequelize models for weather data (e.g., temperature, humidity).
-- [ ] **Configure Sequelize:**
+- [x] **Configure Sequelize:**
   - Set up Sequelize with the appropriate connection parameters in a separate file.
 
 ## Basic API Functionality
