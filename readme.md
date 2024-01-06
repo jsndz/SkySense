@@ -17,21 +17,21 @@
   - Set up Sequelize with the appropriate connection parameters in a separate file.
 
 ## Basic API Functionality
-- [ ] **Create Express Server:**
+- [x] **Create Express Server:**
   - Set up an Express server to handle HTTP requests.
-- [ ] **Implement Basic Routes:**
+- [x] **Implement Basic Routes:**
   - Create routes for fetching and updating weather data.
-- [ ] **Integrate Sequelize Models:**
+- [x] **Integrate Sequelize Models:**
   - Connect Sequelize models to the routes to interact with the database.
 
 ## CRUD Operations
-- [ ] **Implement Data Retrieval (Read):**
+- [x] **Implement Data Retrieval (Read):**
   - Create API endpoints to retrieve weather data.
-- [ ] **Implement Data Creation (Create):**
+- [x] **Implement Data Creation (Create):**
   - Add routes to insert new weather data into the database.
-- [ ] **Implement Data Update (Update):**
+- [x] **Implement Data Update (Update):**
   - Create routes for updating existing weather data.
-- [ ] **Implement Data Deletion (Delete):**
+- [x] **Implement Data Deletion (Delete):**
   - Add routes to delete weather data from the database.
 
 ## Advanced Functionality

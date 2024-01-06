@@ -1,12 +1,12 @@
 const CityRepository = require("../repositories/city-repository");
-const WeatherRepository = require("../repositories/weather-repository");
+const WeatherDataRepository = require("../repositories/weatherdata-repository");
 const genCityData = require("../middlewares/city-api");
 const genWeatherData = require("../middlewares/weather-api");
 
 class WeatherService {
   constructor() {
     this.cityRepository = new CityRepository();
-    this.weatherRepository = new WeatherRepository();
+    this.weatherRepository = new WeatherDataRepository();
   }
 
   async getWeather(cityname) {

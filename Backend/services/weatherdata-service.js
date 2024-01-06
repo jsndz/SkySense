@@ -56,3 +56,5 @@ class WeatherDataService {
         }
     }
     }
+
+    module.exports = WeatherDataService;

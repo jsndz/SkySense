@@ -2,7 +2,7 @@ const axios = require('axios');
 const {WAPI} = require('../config/serverconfig');
 
 async function genWeatherData(lat, lon) {
-  const apiUrl = 'http://api.weatherapi.com/v1';
+  const apiUrl = 'http://api.weatherapi.com/v1/current.json';
   try {
     const response = await axios.get(apiUrl, {
       params: {
