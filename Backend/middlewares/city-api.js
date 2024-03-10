@@ -11,14 +11,14 @@ async function genCityData(cityname) {
     });
     if (response.data.length === 0) {
       throw new Error("City not found");
-      
     } else {
       const location = response.data[0];
       console.log("location", location);
       return {
         lat: location.lat,
         lon: location.lon,
-        city: location.display_name,
+        name: location.name,
+        address: location.display_name,
       };
     }
   } catch (error) {
@@ -26,6 +26,5 @@ async function genCityData(cityname) {
     throw error;
   }
 }
-
 
 module.exports = genCityData;

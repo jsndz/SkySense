@@ -21,5 +21,23 @@ const getWeather = async (req, res) => {
     });
   }
 };
-
-module.exports = { getWeather };
+const getWeatherD = async (req, res) => {
+  try {
+    const weather = await weatherService.getWeatherD(req.params.cityname);
+    return res.status(201).json({
+      data: weather,
+      sucess: true,
+      message: "successfully fetched weather data",
+      err: {},
+    });
+  } catch (error) {
+    console.log(error);
+    return res.status(500).json({
+      data: {},
+      sucess: false,
+      message: "couldnt fetch weather data",
+      err: { error },
+    });
+  }
+};
+module.exports = { getWeather, getWeatherD };

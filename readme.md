@@ -1,6 +1,7 @@
-# SkySence Weather API Backend To-Do List
+# SkySense Weather API Backend To-Do List
 
 ## Setup and Configuration
+
 - [x] **Setup Project Structure:**
   - Create a project structure with folders for models, controllers, routes, etc.
 - [x] **Initialize Node.js Project:**
@@ -9,6 +10,7 @@
   - Install necessary packages like `express`, `mysql2`, `sequelize`, and others.
 
 ## Database Configuration
+
 - [x] **Create MySQL Database:**
   - Set up a MySQL database to store weather-related data.
 - [x] **Define Sequelize Model:**
@@ -17,6 +19,7 @@
   - Set up Sequelize with the appropriate connection parameters in a separate file.
 
 ## Basic API Functionality
+
 - [x] **Create Express Server:**
   - Set up an Express server to handle HTTP requests.
 - [x] **Implement Basic Routes:**
@@ -25,6 +28,7 @@
   - Connect Sequelize models to the routes to interact with the database.
 
 ## CRUD Operations
+
 - [x] **Implement Data Retrieval (Read):**
   - Create API endpoints to retrieve weather data.
 - [x] **Implement Data Creation (Create):**
@@ -35,6 +39,7 @@
   - Add routes to delete weather data from the database.
 
 ## Advanced Functionality
+
 - [ ] **Authentication and Authorization:**
   - Implement user authentication and authorization for API access.
 - [ ] **Data Validation:**
@@ -47,6 +52,7 @@
   - Generate API documentation using tools like Swagger or OpenAPI.
 
 ## Testing
+
 - [ ] **Unit Testing:**
   - Write unit tests for models, controllers, and routes.
 - [ ] **Integration Testing:**
@@ -55,6 +61,7 @@
   - Conduct end-to-end tests to verify the entire API functionality.
 
 ## Deployment
+
 - [ ] **Environment Configuration:**
   - Set up environment variables for configuration.
 - [ ] **Database Migration Scripts:**
@@ -65,6 +72,7 @@
   - Implement monitoring and logging for better visibility into the application.
 
 ## Optimization
+
 - [ ] **Database Indexing:**
   - Optimize database performance with proper indexing.
 - [ ] **Code Optimization:**
@@ -73,6 +81,7 @@
   - Perform load testing to identify and address performance bottlenecks.
 
 ## Security
+
 - [ ] **SSL/TLS Configuration:**
   - Enable SSL/TLS for secure communication.
 - [ ] **Input Sanitization:**
@@ -81,18 +90,21 @@
   - Regularly audit the application for security vulnerabilities.
 
 ## Continuous Integration/Continuous Deployment (CI/CD)
+
 - [ ] **Setup CI/CD Pipeline:**
   - Implement a CI/CD pipeline for automated testing and deployment.
 - [ ] **Automated Deployments:**
   - Configure automated deployments to staging and production environments.
 
 ## Documentation
+
 - [ ] **Code Comments:**
   - Add comments to the code for better understanding.
 - [ ] **API Documentation Update:**
   - Keep API documentation up-to-date with the latest changes.
 
 ## Miscellaneous
+
 - [ ] **Legal Compliance:**
   - Ensure compliance with legal requirements related to data privacy.
 - [ ] **Scalability Considerations:**
