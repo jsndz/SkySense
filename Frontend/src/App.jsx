@@ -2,8 +2,9 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Weather from "./components/Weather";
-
+import LoadingPage from "./components/LoadingPage";
 function App() {
+  const [loading, setLoading] = useState(false);
   const [day, setDay] = useState("");
   const [temp, setTemp] = useState("");
   const [time, setTime] = useState("");
@@ -15,6 +16,7 @@ function App() {
 
   const getWeatherData = async (city) => {
     try {
+      setLoading(true);
       const response = await fetch(
         `http://localhost:3000/api/v1/getweatherD/${city}`
       );
@@ -33,23 +35,30 @@ function App() {
       setConditionIcon(weatherData.data.condition.icon);
       setDay(weatherData.data.isDay);
     } catch (err) {
-      console.log("error in fetching", err);
+      console.log("Invalid City Name", err);
+    } finally {
+      setLoading(false);
     }
   };
   return (
     <>
       <Navbar></Navbar>
-      <Weather
-        getWeatherData={getWeatherData}
-        temp={temp}
-        place={place}
-        address={address}
-        humidity={humidity}
-        condition={condition}
-        day={day}
-        time={time}
-        conditionIcon={conditionIcon}
-      ></Weather>
+
+      {loading ? (
+        <LoadingPage></LoadingPage>
+      ) : (
+        <Weather
+          getWeatherData={getWeatherData}
+          temp={temp}
+          place={place}
+          address={address}
+          humidity={humidity}
+          condition={condition}
+          day={day}
+          time={time}
+          conditionIcon={conditionIcon}
+        ></Weather>
+      )}
     </>
   );
 }
