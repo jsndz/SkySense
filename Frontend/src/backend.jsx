@@ -29,30 +29,29 @@ async function genCityData(cityname) {
 
 async function sky(isDaytime) {
   if (isDaytime == 1) {
-    return "day";
+    return "Day";
   } else {
-    return "night";
+    return "Night";
   }
 }
 
 async function genWeatherData(lat, lon) {
   const apiUrl = "http://api.weatherapi.com/v1/current.json";
   try {
-    console.log("got weather 1");
-
     const response = await axios.get(apiUrl, {
       params: {
         key: api_key,
         q: `${lat},${lon}`,
       },
     });
-    console.log("got weather 2");
-    console.log(response);
+
     const {
       temp_c: temperature,
       humidity,
       is_day,
       condition,
+      wind_kph,
+      vis_km,
     } = response.data.current;
     const { localtime: time } = response.data.location;
     const timestamp = new Date();
@@ -63,6 +62,8 @@ async function genWeatherData(lat, lon) {
       is_day,
       timestamp,
       time,
+      wind_kph,
+      vis_km,
     };
   } catch (error) {
     console.error("Error in fetching", error, error.response);
@@ -72,11 +73,9 @@ async function genWeatherData(lat, lon) {
 export async function getWeatherD(cityname) {
   try {
     const city = await genCityData(cityname);
-    console.log("got city data");
     const weatherdata = await genWeatherData(city.lat, city.lon);
-    console.log("got weather data");
     const skyTime = await sky(weatherdata.is_day);
-    console.log("got sky data");
+
     return {
       ...weatherdata,
       name: city.name,
@@ -88,5 +87,3 @@ export async function getWeatherD(cityname) {
     throw new Error("Error fetching data");
   }
 }
-
-getWeatherD();
