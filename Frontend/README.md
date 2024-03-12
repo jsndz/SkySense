@@ -1,42 +1,52 @@
-# React + Vite
+# Frontend Tech Stack - SkySense Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Vite
 
-Currently, two official plugins are available:
+- **Description**: Fast build tool for React applications.
+- **Version**: 5.1.4
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## React
 
+- **Description**: JavaScript library for building user interfaces.
+- **Version**: 18.2.0
 
+## Tailwind CSS
 
-<div className="relative ...">
-        {/* loading overlay */}
-        <div className="absolute bg-white bg-opacity-60 z-10 h-full w-full flex items-center justify-center">
-          <div className="flex items-center pt-10">
-            <span className="text-3xl mr-4 ">Loading</span>
-            {/* loading icon */}
-            <svg
-              className="animate-spin h-5 w-5 text-gray-600 "
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <circle
-                className="opacity-25"
-                cx={12}
-                cy={12}
-                r={10}
-                stroke="currentColor"
-                strokeWidth={4}
-              />
-              <path
-                className="opacity-75"
-                fill="currentColor"
-                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-              ></path>
-            </svg>
-            {/* end loading icon */}
-          </div>
-        </div>
-        {/* end loading overlay */}
-      </div>
+- **Description**: Utility-first CSS framework for rapid design.
+- **Version**: 3.4.1
+
+## Axios
+
+- **Description**: Promise-based HTTP client for making requests to the backend API.
+- **Version**: 1.6.7
+
+## @headlessui/react
+
+- **Description**: Accessible UI components for React applications.
+- **Version**: 1.7.18
+
+## @heroicons/react
+
+- **Description**: Set of free, MIT-licensed high-quality SVG icons for you to use in your web projects.
+- **Version**: 2.1.1
+
+## @tailwindcss/forms
+
+- **Description**: Tailwind CSS plugin for styling form elements.
+- **Version**: 0.5.7
+
+## @vitejs/plugin-react
+
+- **Description**: Official Vite plugin for React support.
+- **Version**: 4.2.1
+
+## Other Dev Dependencies
+
+- **@types/react**: TypeScript type definitions for React.
+- **@types/react-dom**: TypeScript type definitions for React DOM.
+- **autoprefixer**: PostCSS plugin to parse CSS and add vendor prefixes.
+- **eslint**: Pluggable linting utility for JavaScript and JSX.
+- **eslint-plugin-react**: React-specific linting rules for ESLint.
+- **eslint-plugin-react-hooks**: ESLint plugin for React hooks.
+- **eslint-plugin-react-refresh**: ESLint plugin for React Fast Refresh.
+- **postcss**: Tool for transforming styles with JS plugins.
