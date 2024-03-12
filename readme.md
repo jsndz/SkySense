@@ -89,3 +89,7 @@ The SkySense application is deployed and can be accessed at https://jsndz.github
 
 **Note**:
 While deploying the site i did not deploy backend as a server so the frontend is independently hosted without backend. The API logic is written in the file backend.jsx.
+
+**Experience**:
+The project was very fun to do. This is my first "frontend project" with react. I wrote the backend for this long back ago. The deployment was very hard. I learn api documentation with swagger, tailwind components, github actions in this project. And the main thing I learned is to think before you force push which deleted my commit logs entirely. Well, It was fun (X_X).
+Thank you
